@@ -208,7 +208,7 @@ body {
 
 /* name generator */
 .my-input {
-  width: 500px;
+  width: 90%;
   height: 100px;
   margin-bottom: 50px;
   margin-left: 30px;
@@ -550,7 +550,7 @@ padding: 10px 20px;
 /* single blog post preivew */
 .blog_post_page {
   background-color: #ececec;
-  padding: 150px;
+  padding: 150px 100px;
 }
 .blog_post_page_preview {
   background-color: white;
@@ -942,7 +942,7 @@ padding: 10px 20px;
     padding: 10% 5%;
   }
   .home_header_heading {
-    font-size: 36px;
+    font-size: 24px;
     padding-top: 80px;
     padding-bottom: 10px;
   }
@@ -984,7 +984,7 @@ padding: 10px 20px;
     padding-left: 7%;
   }
   .home_header_heading {
-    font-size: 52px;
+    font-size: 40px;
     padding-top: 150px;
     padding-bottom: 20px;
   }
@@ -1019,7 +1019,7 @@ padding: 10px 20px;
   
 .navbar_heading{
   padding-left: 10px;
-  font-size : 24px
+  font-size : 20px
 }
   .logo {
     font-size: 20px;
@@ -1039,6 +1039,39 @@ padding: 10px 20px;
   }
 }
 
+/* Media Query for Mobile Devices (less than 480px) */
+@media (max-width: 480px) {
+  .blog_navbar {
+    padding: 10px;
+  }
+  .navbar_heading {
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  ul {
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  li {
+    padding: 5px 0;
+  }
+  .navbar_link {
+    font-size: 20px;
+    padding: 5px 10px;
+    width: auto;
+  }
+  .blog_paragraph {
+    padding: 50px 5%;
+    font-size: 20px;
+  }
+  .blog_paragraph_2 {
+    padding: 50px 5%;
+    font-size: 20px;
+  }
+}
 /* For screens between 768px and 1024px wide */
 @media (min-width: 768px) and (max-width: 1024px) {
   .blog_navbar {
@@ -1064,7 +1097,7 @@ padding: 10px 20px;
 /* For screens over 1024px wide */
 @media (min-width: 1024px) {
   .blog_navbar {
-    padding: 20px 40px;
+    padding: 5px 40px;
   }
   .logo {
     font-size: 32px;
@@ -1085,6 +1118,9 @@ padding: 10px 20px;
 
 /* Media Queries */
 @media (max-width: 768px) {
+  .blog_post_page{
+    padding: 20px;
+  }
   .blog_post_page_preview {
     width: 100%;
   }
@@ -1101,7 +1137,7 @@ padding: 10px 20px;
 
 @media (max-width: 480px) {
   .blog_post_page {
-    padding: 5%;
+    padding: 20px;
   }
   .blog_post_page_preview {
     width: 100%;
@@ -1113,6 +1149,11 @@ padding: 10px 20px;
   .blogs_post_title {
     font-size: 2rem;
   }
+  .blog_post_page_image{
+    margin-top: 120px;
+
+  }
+
   .blogs_post_description {
     font-size: 1.2rem;
   }

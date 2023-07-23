@@ -59,7 +59,7 @@ const contact = () => {
       </div>
 
       <div style={{ textAlign: "center" }}>
-        <h2 className="text-dark text-subtitle">Let's get in touch</h2>
+      <h2 className="text-dark text-subtitle">Let&rsquo;s get in touch</h2>
         <br />
         <p className="form-contact-email">contact@bgminame.com </p>
       </div>

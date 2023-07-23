@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link'; // Import the Link component from next/link
 
 export default function Footer() {
   return (
@@ -9,26 +10,37 @@ export default function Footer() {
             About Name Generator
           </h4>
           <p className='footer_about_paragraph'>
-          We are your go-to website to generate cool BGMI names. Here, you will
-          also get to learn a lot of informational stuff about our favorite BGMI
-          game too.</p>
+            We are your go-to website to generate cool BGMI names. Here, you will
+            also get to learn a lot of informational stuff about our favorite BGMI
+            game too.
+          </p>
         </div>
         <div>
-        <div className='footer_links'>
-          <ul>
-             <li className='li_heading'>Quick Links</li>
-             <li> <a href='/privacy'> Privacy Policy</a></li>
-             <li> <a href='/contact'> Contact us</a></li>
-             <li> <a href='#'> Terms and Conditions</a></li>
-          </ul>
+          <div className='footer_links'>
+            <ul>
+              <li className='li_heading'>Quick Links</li>
+              {/* Replace anchor tags with Link components */}
+              <li>
+                <Link href='/privacy'>
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href='/contact'>
+                  Contact us
+                </Link>
+              </li>
+              <li>
+                <a href='#'>Terms and Conditions</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
 
       <div className="footer"> 
-
-       &#169; CopyRight. All Rights Reserved.
+        &#169; CopyRight. All Rights Reserved.
       </div>
     </div>
-  )
+  );
 }
